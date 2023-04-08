@@ -1,0 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+[x-cloak] { display: none !important; }
+
+:root {
+    --primary-color: #5ACDF0;
+    --secondary-color: #040749;
+}
+
+
+.btn:disabled {
+    @apply opacity-75;
+}
+
+.text--primary {
+    color: var(--primary-color);
+}
+
+.text--secondary {
+    color: var(--secondary-color);
+}
+
+.bg--primary {
+    background-color: var(--primary-color);
+}
+
+.bg--secondary {
+    background-color: var(--secondary-color);
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn--white {
+    @apply bg-white;
+    color: var(--secondary-color);
+}
+
+a {
+    @apply underline text-blue-600;
+}
+
+.min-h-body {
+    min-height: 100vh;
+}
+
+.btn-checkbox:checked + * {
+    background-color: #317185;
+    color: white;
+}
